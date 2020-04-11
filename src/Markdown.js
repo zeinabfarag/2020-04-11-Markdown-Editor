@@ -4,14 +4,14 @@ import AceEditor from "react-ace";
 import "brace/mode/markdown";
 import "brace/theme/chrome";
 
-class MD extends Component {
+class Markdown extends Component {
   state = {
     markdown: "",
   };
   render() {
     return (
       <div>
-        <h1> MD </h1>
+        <h1> Markdown </h1>
         <AceEditor
           mode="markdown"
           theme="chrome"
@@ -32,4 +32,4 @@ class MD extends Component {
   };
 }
 
-export default MD;
+export default Markdown;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import HTML from "./HTML";
-import MD from "./MD";
+import Html from "./Html";
+import Markdown from "./Markdown";
 import showdown from "showdown";
 
 class App extends Component {
@@ -15,10 +15,10 @@ class App extends Component {
         <div className="ui divided two column grid">
           <div className="row">
             <div className="column">
-              <MD convertMD={this.convertMD} />
+              <Markdown convertMD={this.convertMD} />
             </div>
             <div className="column">
-              <HTML html={this.state.html} />
+              <Html html={this.state.html} />
             </div>
           </div>
         </div>

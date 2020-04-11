@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class HTML extends Component {
+class Html extends Component {
   render() {
     return (
       <div>
@@ -11,4 +11,4 @@ class HTML extends Component {
   }
 }
 
-export default HTML;
+export default Html;
