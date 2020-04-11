@@ -12,10 +12,10 @@ class App extends Component {
     return (
       <div>
         <h1 style={{ textAlign: "center" }}> MarkDown Editor</h1>
-        <div className="ui divided two column grid">
-          <div className="row">
+        <div className="ui vertically divided grid">
+          <div className="two column row">
             <div className="column">
-              <Markdown convertMD={this.convertMD} />
+              <Markdown className="column" convertMD={this.convertMD} />
             </div>
             <div className="column">
               <Html html={this.state.html} />
@@ -26,10 +26,10 @@ class App extends Component {
     );
   }
 
-  convertMD = (text) => {
+  convertMD = (md) => {
     let converter = new showdown.Converter();
 
-    this.setState({ html: converter.makeHtml(text) });
+    this.setState({ html: converter.makeHtml(md) });
   };
 }
 
