@@ -1,0 +1,14 @@
+.App {
+  margin: 0 3rem;
+}
+
+.languageTitle {
+  color: darkslategray;
+}
+
+#title {
+  text-align: center;
+  margin-top: 1rem;
+  color: darkslategray;
+  margin-bottom: 3rem;
+}

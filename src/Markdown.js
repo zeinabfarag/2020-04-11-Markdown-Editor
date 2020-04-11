@@ -16,14 +16,14 @@ class Markdown extends Component {
       <div className="ui grid">
         <div className="two column row">
           <div className="column">
-            <h1> Markdown </h1>
+            <h2 className="languageTitle"> Markdown </h2>
           </div>
           <div className="column">
             <InputSelect selectTheme={this.selectTheme} />
           </div>
         </div>
         <AceEditor
-          style={{ height: "100vh" }}
+          style={{ height: "100vh", width: "100vw" }}
           mode="markdown"
           theme={this.state.theme}
           value={this.state.markdown}

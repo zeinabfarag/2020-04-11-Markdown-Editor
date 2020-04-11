@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Html from "./Html";
 import Markdown from "./Markdown";
 import showdown from "showdown";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -10,9 +11,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <h1 style={{ textAlign: "center" }}> MarkDown Editor</h1>
-        <div className="ui vertically divided grid">
+      <div className="App">
+        <h1 id="title"> Markdown Editor</h1>
+        <div className="ui grid">
           <div className="two column row">
             <div className="column">
               <Markdown className="column" convertMD={this.convertMD} />

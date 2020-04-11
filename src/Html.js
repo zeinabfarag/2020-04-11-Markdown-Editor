@@ -4,7 +4,7 @@ class Html extends Component {
   render() {
     return (
       <div>
-        <h1> HTML </h1>
+        <h2 className="languageTitle"> HTML </h2>
         <div dangerouslySetInnerHTML={{ __html: this.props.html }}></div>
       </div>
     );
